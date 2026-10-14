@@ -2,36 +2,51 @@
 
 **Um universo literário explorado como uma experiência interativa.**
 
-[**Explorar o códex ao vivo →**](https://guerra-da-coroa-codex.otaviomtsilva.chatgpt.site)
+## Explore o projeto
 
-Projeto de Otávio, autor de *A Guerra da Coroa*, desenvolvido com assistência de IA. O códex reúne o universo da obra em uma aplicação que conecta pessoas, famílias, Casas, lugares, povos e sistemas do mundo.
+[**Abrir o Códex no Cloudflare →**](https://codex.thewarofcrown.workers.dev/)
+
+[Versão hospedada no ChatGPT Sites](https://guerra-da-coroa-codex.otaviomtsilva.chatgpt.site)
+
+Projeto de **Otávio Tavares**, autor de *A Guerra da Coroa*, desenvolvido com assistência de IA. O Códex conecta personagens, famílias, Casas, lugares, povos e sistemas do mundo em uma aplicação interativa.
+
+**Apresentação atualizada em 13 de outubro de 2026**, conforme a versão aprovada pelo autor.
 
 ## A experiência
 
-- **Atlas narrativo:** acompanhe acontecimentos e deslocamentos pelo mapa, com navegação por livros, capítulos e datas, reprodução temporal e trajetos animados.
-- **Globo de relações:** explore Casas e famílias por uma esfera interativa, aproximando-se para descobrir brasões, descrições e genealogias.
-- **Genealogias:** retratos, vínculos familiares identificados e conexões entre famílias, preservando informações ainda desconhecidas na narrativa.
-- **Cronologia:** navegue pelas eras e pelos acontecimentos, com acesso ao instante correspondente no atlas.
-- **Busca do universo:** consulte personagens, Casas, lugares, povos e relações documentadas.
+- **Atlas narrativo:** explore o mapa de Azafor por livros, anos e eras; selecione acontecimentos e acompanhe as localizações e os trajetos dos personagens.
+- **Globo de relações:** explore Casas e famílias em uma esfera interativa, com brasões, descrições e conexões genealógicas.
+- **Genealogias:** consulte retratos, vínculos familiares e conexões entre famílias, preservando informações ainda desconhecidas na narrativa.
+- **Cronologia:** navegue pelas eras e pelos acontecimentos, com acesso ao evento correspondente no atlas.
+- **Busca do universo:** encontre personagens, Casas, lugares, povos e relações documentadas.
 - **Malarin:** traduza, consulte o dicionário e explore as regras da língua criada para a obra. Propostas novas são identificadas como pendentes de aprovação do autor.
-- **Celular e computador:** interação por mouse e gestos de toque, incluindo zoom e navegação nos mapas e nas árvores.
+- **Celular e computador:** navegue por mouse ou toque, com zoom nos mapas e nas árvores.
+- **Menus com retorno visual:** as setas giram suavemente ao abrir e fechar as opções.
 
 O site contém spoilers e informações de planejamento da saga.
 
 ## Leitura pública, gestão do autor
 
-A exploração do universo, a tradução e a consulta ao dicionário são públicas. O registro, a edição e a exclusão de palavras, a edição do cânone e os relatórios de revisão exigem a conta autorizada do autor. As permissões de escrita são verificadas no servidor.
+A exploração do universo, a tradução e a consulta ao dicionário são públicas. A edição do cânone, as ferramentas de revisão editorial e o registro, a edição e a exclusão de palavras exigem autenticação do autor. As permissões de escrita são verificadas no servidor.
 
-Os relatórios editoriais, as decisões de revisão e o histórico de edição não são enviados aos visitantes. As sugestões de tradução não são registradas automaticamente.
+No Cloudflare, o autor entra por nome de usuário e senha, com opção de mostrar a senha e encerrar a sessão. A versão no ChatGPT Sites mantém sua própria autenticação.
+
+As ferramentas autorais incluem revisão do cânone e dos livros, decisões sobre apontamentos e marcação dos trechos a corrigir. As sugestões de tradução não são registradas automaticamente.
 
 ## Construção
 
-**TypeScript · React · Vinext · Cloudflare Workers · Cloudflare D1**
+**TypeScript · React · Vinext · Cloudflare Workers · Cloudflare D1 (SQL)**
 
-A aplicação combina interface interativa, dados relacionais do universo e armazenamento persistente. As fontes portuguesas orientam o cânone; fontes de tradução não substituem datas ou informações da obra. Atualizações preservam as decisões e as edições manuais do autor.
+A interface combina mapas e visualizações interativas com armazenamento persistente. O Cloudflare Workers hospeda a aplicação externa, e o Cloudflare D1 armazena seus dados. Parte do processamento da interface usa um Web Worker no navegador.
 
-## Sobre esta apresentação
+As fontes portuguesas orientam o cânone; fontes de tradução não substituem datas ou informações da obra. Atualizações do código preservam as decisões e as edições manuais armazenadas no banco.
 
-Este repositório apresenta o projeto e direciona para a aplicação publicada. O código-fonte e os materiais editoriais não fazem parte desta apresentação. O site funciona no link acima; este repositório não é a hospedagem da aplicação.
+As duas hospedagens usam bancos e sessões próprios. A publicação do código em ambas não sincroniza automaticamente as revisões entre elas.
 
-*A Guerra da Coroa e seu universo são uma criação de Otávio. Esta apresentação não concede licença de reprodução da obra ou de seus materiais.*
+## Sobre este repositório
+
+Este repositório público é a **apresentação do projeto para portfólio**. O acesso à aplicação está no link do Cloudflare acima.
+
+O código-fonte completo, os manuscritos, os materiais editoriais e as configurações privadas permanecem no repositório privado da aplicação. Este repositório não hospeda o Códex.
+
+*A Guerra da Coroa e seu universo são uma criação de Otávio Tavares. Esta apresentação não concede licença de reprodução da obra ou de seus materiais.*
