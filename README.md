@@ -6,8 +6,6 @@
 
 [**Abrir o Códex no Cloudflare →**](https://codex.thewarofcrown.workers.dev/)
 
-[Versão hospedada no ChatGPT Sites](https://guerra-da-coroa-codex.otaviomtsilva.chatgpt.site)
-
 Projeto de **Otávio Tavares**, autor de *A Guerra da Coroa*, desenvolvido com assistência de IA. O Códex conecta personagens, famílias, Casas, lugares, povos e sistemas do mundo em uma aplicação interativa.
 
 **Apresentação atualizada em 13 de outubro de 2026**, conforme a versão aprovada pelo autor.
